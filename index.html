@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--   BOOTSTRSAP   -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--   FONT AWESOME   -->
+    <script
+      src="https://kit.fontawesome.com/36dc22a110.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--   ADOBE FONTS   -->
+    <link rel="stylesheet" href="https://use.typekit.net/zmg7udx.css" />
+
+    <!--   STYLES   -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Olga Cerovic | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-bar">
+        <div class="hamburger-menu" onclick="handleHamburgerMenuButton()">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </div>
+        <ul class="navigation-menu-mobile">
+          <li class="list-item"><a href="#">home</a></li>
+          <li class="list-item"><a href="#about">about</a></li>
+          <li class="list-item"><a href="#myWork">work</a></li>
+          <li class="list-item"><a href="#contactMe">contact</a></li>
+        </ul>
+        <div class="nav-bar-main container">
+          <div class="menu-left">
+            <ul class="navigation-menu">
+              <li class="list-item"><a href="#">home</a></li>
+              <li class="list-item"><a href="#about">about</a></li>
+              <li class="list-item"><a href="#work">work</a></li>
+              <li class="list-item"><a href="#contactMe">contact</a></li>
+            </ul>
+          </div>
+          <div class="navigation-social">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main-photo">
+        <img src="./images/Olga_bw_12.png" />
+      </div>
+    </header>
+    <main class="container">
+      <div class="intro-content">
+        <div class="intro-txt">
+          <div>
+            <h4>
+              Hi, I'm <span id="typewriter"></span><span id="cursor">|</span>.
+            </h4>
+            <h3>Front end Developer.</h3>
+            <h1>Graphic and UX designer.</h1>
+          </div>
+          <div class="contact-me">
+            <p>Find out more</p>
+            <a href="#contactMe"
+              ><i class="fa-solid fa-circle-chevron-down"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="main-content" id="work">
+        <div class="heading">
+          <h2>WORK</h2>
+          <h6>A SHOWCASE OF SELECTED</h6>
+          <h6>DESIGN AND DEVELOPMENT PROJECTS</h6>
+          <h6 class="dots">……………………………………………………</h6>
+        </div>
+        <div class="work-grid row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card card-custom">
+              <img src="./images/PE2.jpg" alt="" />
+              <div class="card card-txt">
+                <h5 class="card-title">SCHOOL PROJECT</h5>
+                <p class="card-text">Social Media App</p>
+                <a
+                  href="https://github.com/Noroff-FEU-Assignments/project-exam-2-olga-cerovic"
+                  class="link-to-website"
+                  >Go to repository >></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card card-custom">
+              <img src="./images/js-frameworks.jpg" alt="" />
+              <div class="card card-txt">
+                <h5 class="card-title">SCHOOL PROJECT</h5>
+                <p class="card-text">React App</p>
+                <a
+                  href="https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-olga-cerovic"
+                  class="link-to-website"
+                  >Go to repository >></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card card-custom">
+              <img src="./images/science-museum.jpg" alt="" />
+              <div class="card card-txt">
+                <h5 class="card-title">SCHOOL PROJECT</h5>
+                <p class="card-text">Science Museum Website</p>
+                <a
+                  href="https://github.com/olga-cerovic/Semester-Project-1"
+                  class="link-to-website"
+                  >Go to repository >></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="card card-custom">
+              <img src="./images/brush.jpg" alt="" />
+              <div class="card card-txt">
+                <h5 class="card-title">SCHOOL PROJECT</h5>
+                <p class="card-text">E-commerce website selling clothes</p>
+                <a
+                  href="https://github.com/olga-cerovic/semester-project-2-cleanup"
+                  class="link-to-website"
+                  >Go to repository >></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content" id="about">
+        <div class="about-inner">
+          <h2>ABOUT ME</h2>
+          <h6>A FEW WORDS ABOUT</h6>
+          <h6>MYSELF AND THINGS I LIKE TO DO</h6>
+          <h6 class="dots">……………………………………………………</h6>
+          <p>
+            After high school I enrolled Graphic Engineering and Design studies
+            where I gained solid knowledge about digital and print design. When
+            I moved to Norway I had an idea that I could combine that knowledge
+            with programming and that's how I decided to study Front end
+            Development at Noroff School of Technology and Digital Media in
+            Oslo. I am approaching the end of my studies and I'm looking forward
+            to impoving and expanding my knowledge in both programming and
+            design field. I am excited about building my career as a developer
+            and designer and I'm looking forward to new challenges and
+            opportunities.
+          </p>
+        </div>
+      </div>
+      <div class="main-content" id="skills">
+        <div class="heading">
+          <h2>SKILLS AND TOOLS</h2>
+          <h6>A SELECTION AMONG OTHER</h6>
+          <h6>SKILLS AND TOOLS I USE FOR MY PROJECTS</h6>
+          <h6 class="dots">……………………………………………………</h6>
+        </div>
+        <div class="skills-grid">
+          <div class="brand-container">
+            <div class="text-center">
+              <div class="row skills-container">
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Javascript</div>
+                  </div>
+                </div>
+                <div class="outer-backgrounds lilac col-md-2 col-sm-4 col-4">
+                  <div class="">
+                    <div class="brand-box">CSS</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Sass</div>
+                  </div>
+                </div>
+                <div class="outer-backgrounds lilac col-md-2 col-sm-4 col-4">
+                  <div class="">
+                    <div class="brand-box">Html</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Bootstrap</div>
+                  </div>
+                </div>
+                <div class="outer-backgrounds lilac col-md-2 col-sm-4 col-4">
+                  <div class="">
+                    <div class="brand-box">VS Code</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds light-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Rest API</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Github</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds light-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">UX/ UI</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Wordpress</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds light-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Adobe</div>
+                  </div>
+                </div>
+                <div
+                  class="outer-backgrounds dark-grey col-md-2 col-sm-4 col-4"
+                >
+                  <div class="">
+                    <div class="brand-box">Figma</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content" id="contactMe">
+        <div class="contact-inner">
+          <h2>CONTACT</h2>
+          <h6>GET IN TOUCH WITH ME</h6>
+          <h6>IF YOU HAVE LIKED MY WORK SO FAR</h6>
+          <h6 class="dots">……………………………………………………</h6>
+          <div>
+            <div class="contact-form-container">
+              <p id="formError"></p>
+              <form id="contactForm">
+                <div>
+                  <div class="field-error" id="fullNameError">
+                    Your name must be a least 5 characters long.
+                  </div>
+                  <input
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Full Name (required):"
+                  />
+                </div>
+                <div>
+                  <div class="field-error" id="emailError">
+                    Please enter a valid email address. Example email@email.com
+                  </div>
+                  <input
+                    name="email"
+                    id="email"
+                    placeholder="Email (required):"
+                  />
+                </div>
+                <div>
+                  <div class="field-error" id="subjectError">
+                    Your subject must be at least 15 characters long.
+                  </div>
+                  <input
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject (required):"
+                  />
+                </div>
+                <div>
+                  <div class="field-error" id="messageError">
+                    Your message must be at least 25 characters long.
+                  </div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message (required):"
+                  ></textarea>
+                </div>
+                <div class="send-button">
+                  <button
+                    class="formButton"
+                    type="submit"
+                    id="formButton"
+                    onclick="validateForm();"
+                  >
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="dots-footer">…………………………………………………………………………………</p>
+      <p class="all-rights">
+        © 2022 | Designed & coded by Olga Cerovic (and Fiona the cat)
+      </p>
+    </footer>
+    <div id="snackbarForm">
+      <span class="close" onclick="closeSnackBar()">&times;</span>
+      Thanks for reaching out! I'll get back to you in no time! :)
+    </div>
+    <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/contact-form.js"></script>
+    <script src="./js/typewriter.js"></script>
+    <script src="./js/closeSnackBar.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>

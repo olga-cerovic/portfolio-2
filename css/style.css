@@ -1,0 +1,865 @@
+html * {
+  font-family: montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*** TEXT ANIMATION ***/
+
+.intro-txt h4,
+.intro-txt h3,
+.intro-txt h1 {
+  opacity: 0;
+}
+
+.intro-txt h4 {
+  animation: ani1 3s ease-out 0.5s forwards;
+}
+
+.intro-txt h3 {
+  animation: ani1 3s ease-out 1s forwards;
+}
+
+.intro-txt h1 {
+  animation: ani1 3s ease-out 1.5s forwards;
+}
+
+@keyframes ani1 {
+  100% {
+    opacity: 1;
+  }
+}
+
+#cursor {
+  color: #fff;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
+#typewriter {
+  color: #5ad17c;
+}
+
+/*** SKILLS GRID ***/
+
+.outer-backgrounds {
+  background-color: #eae6e5;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 1rem solid white;
+  text-align: center;
+  align-content: center;
+}
+
+.brand-box {
+  margin-bottom: 0;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.dark-grey {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.light-grey {
+  background-color: #d1c9ab;
+  color: #000;
+}
+
+.lilac {
+  background-color: #979cd1;
+  color: #000;
+}
+
+/*** NAVIGATION ***/
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+.navigation-menu-mobile {
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.notShow {
+  display: none;
+}
+
+.nav-bar-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.nav-bar-main ul {
+  padding-left: 0;
+}
+
+.nav-bar-main li :hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.navigation-menu-mobile li {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.navigation-menu-mobile li a {
+  width: 100%;
+  all: unset;
+  z-index: 2000;
+}
+
+.navigation-menu-mobile li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  z-index: 100000;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-decoration: none;
+}
+
+.menu-left {
+  display: block;
+}
+
+.navigation-social i {
+  padding-left: 10px;
+}
+
+.navigation-menu-mobile {
+  position: absolute;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  margin-top: -15%;
+  background-color: #000;
+  padding-top: 30vh;
+  padding-bottom: 25vh;
+  z-index: 7000;
+  margin-left: 0 !important;
+}
+
+.list-item {
+  padding-right: 2vh;
+  list-style: none;
+}
+
+/* Hamburger-menu */
+.hamburger-menu {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 2000000;
+  margin-left: 12%;
+}
+
+.ham-line {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+}
+
+.navigation-menu-mobile {
+  display: none;
+}
+
+header .hamburger-menu {
+  position: absolute;
+  top: 3vh;
+}
+
+.show {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.notShow {
+  display: none;
+}
+
+.navigation-menu-mobile li {
+  width: 100%;
+  padding: 2% 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.navigation-menu-mobile li a {
+  width: 100%;
+  all: unset;
+}
+
+/*** INTRO CONTENT ***/
+
+.intro-txt {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.intro-txt h4 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.intro-txt h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.intro-txt h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+
+.intro-txt span {
+  color: #5ad17c;
+}
+
+.intro-txt p {
+  color: #5ad17c;
+  margin-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.fa-circle-chevron-down {
+  color: #5ad17c;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.fa-circle-chevron-down:hover {
+  color: #979cd1;
+}
+
+.main-photo {
+  position: absolute;
+  text-align: center;
+  transform: translateY(40%);
+  z-index: 1000;
+}
+
+.intro-txt {
+  padding-top: 27rem;
+  text-align: center;
+}
+
+/*** COMMON STYLES ***/
+
+#about,
+#contactMe {
+  background-color: #1d1d1d;
+  color: #fff;
+  text-align: center;
+}
+
+.about-inner,
+.contact-inner {
+  max-width: 650px;
+  margin: auto;
+}
+
+.intro-content {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.heading {
+  margin-top: 0;
+}
+
+#about p {
+  margin-bottom: 0;
+  padding-bottom: 5rem;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  text-align: left;
+}
+
+.heading,
+.about-inner,
+.contact-inner {
+  text-align: center;
+  padding-top: 1.8rem;
+}
+
+.heading h2 {
+  line-height: 2;
+  font-weight: 800;
+}
+
+h6 {
+  line-height: 0.8;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.about-inner h2,
+.contact-inner h2 {
+  line-height: 2;
+  font-weight: 800;
+}
+
+.dots {
+  font-size: 1.8rem;
+  line-height: 0.1;
+  padding-bottom: 1.5rem;
+}
+
+/*** WORK GRID ***/
+
+.card h5 {
+  margin-bottom: 0.3rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.card p {
+  margin-bottom: 0.8;
+  font-weight: 500;
+}
+
+.card a {
+  font-weight: 500;
+  font-style: italic;
+  color: #fff;
+}
+
+.card a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.card-custom {
+  padding: 2rem;
+  background-color: #1d1d1d;
+  border-radius: 0;
+  margin-bottom: 1.5rem;
+}
+
+.card-txt {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+/*** CONTACT FORM ***/
+
+#snackbarForm {
+  visibility: hidden;
+  width: 85%;
+  background-color: #979cd1;
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
+  font-weight: 500;
+  text-align: center;
+  padding: 5rem 10rem 5rem 10rem;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 30%;
+  font-size: 1rem;
+}
+
+#snackbarForm.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  z-index: 1000;
+}
+
+.close {
+  color: #1d1d1d;
+  font-size: 2rem;
+  font-weight: bold;
+  float: right;
+  transform: translate(7rem, -4rem);
+}
+
+.close:hover {
+  color: #5ad17c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contactForm input,
+textarea {
+  width: 100%;
+  padding: 1.3vh;
+  margin-bottom: 1.4rem;
+}
+
+textarea {
+  padding-bottom: 8vh;
+}
+
+::placeholder {
+  color: #1d1d1d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.field-error {
+  display: none;
+  color: #5ad17c;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+
+#formError {
+  text-transform: uppercase;
+  color: #979cd1;
+}
+
+.formButton {
+  background-color: #5ad17c;
+  padding: 15px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.formButton:hover,
+#contact {
+  cursor: pointer;
+  background-color: #979cd1;
+}
+
+#contactMe {
+  margin-top: 0.6rem;
+}
+
+.send-button {
+  text-align: center;
+}
+
+/*** FOOTER ***/
+
+footer {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.dots-footer {
+  font-size: 1.4rem;
+}
+.all-rights {
+  font-size: 0.8rem;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 1200px) {
+  .menu-left {
+    font-size: 0.9rem;
+  }
+  .main-photo img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .intro-txt {
+    padding-top: 24rem;
+  }
+
+  .outer-backgrounds {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0.7rem solid white;
+  }
+
+  .brand-box {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .navigation-menu {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    background-color: white;
+    display: none;
+  }
+
+  .navigation-bar {
+    top: 0%;
+  }
+  .nav-change {
+    transform: translate(0%);
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .intro-txt h4 {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .intro-txt h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  .intro-txt h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
+  .card a {
+    font-size: 0.9rem;
+  }
+
+  .about-inner,
+  .contact-inner {
+    max-width: 550px;
+  }
+
+  .outer-backgrounds {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border: 0.4rem solid white;
+  }
+
+  .brand-box {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .hamburger-menu {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .hamburger-menu {
+    margin-left: 9%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .hamburger-menu {
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .hamburger-menu {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-photo {
+    width: 50%;
+  }
+
+  .intro-txt {
+    padding-top: 17rem;
+  }
+
+  .intro-txt h4 {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .intro-txt h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .intro-txt h1 {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  .heading h2 {
+    font-size: 1.4rem;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+  }
+
+  .about-inner h2,
+  .contact-inner h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-inner,
+  .contact-inner {
+    max-width: 420px;
+  }
+
+  .outer-backgrounds {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0.8rem solid white;
+  }
+
+  .brand-box {
+    font-size: 1rem;
+  }
+
+  .dots-footer {
+    font-size: 1rem;
+  }
+
+  #contactForm input,
+  textarea {
+    padding: 1vh;
+    margin-bottom: 1rem;
+  }
+
+  textarea {
+    padding-bottom: 6vh;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .field-error {
+    font-size: 0.8rem;
+  }
+
+  .hamburger-menu {
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .intro-txt {
+    padding-top: 16rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .intro-txt {
+    padding-top: 15rem;
+  }
+
+  .hamburger-menu {
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .intro-txt {
+    padding-top: 14rem;
+  }
+
+  .hamburger-menu {
+    margin-left: 11%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .intro-txt {
+    padding-top: 13rem;
+  }
+  .hamburger-menu {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .main-photo {
+    width: 55%;
+  }
+
+  .formButton {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  #snackbarForm {
+    padding: 5rem 5rem 5rem 5rem;
+  }
+
+  .hamburger-menu {
+    margin-left: 5%;
+  }
+
+  .close {
+    transform: translate(4rem, -4rem);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .main-photo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #about p {
+    font-size: 0.85rem;
+  }
+
+  .about-inner {
+    max-width: 380px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .main-photo {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .about-inner,
+  .contact-inner {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .dots {
+    font-size: 1.4rem;
+  }
+
+  .outer-backgrounds {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0.5rem solid white;
+  }
+
+  .brand-box {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .intro-txt {
+    padding-top: 12rem;
+  }
+
+  #about p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .main-photo {
+    width: 70%;
+  }
+
+  .intro-txt h4 {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .intro-txt h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .intro-txt h1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  .about-inner,
+  .contact-inner {
+    max-width: 320px;
+  }
+
+  .outer-backgrounds {
+    border: 0.3rem solid white;
+  }
+
+  .brand-box {
+    font-size: 0.9 rem;
+  }
+
+  .skills-container {
+    margin-left: 0.5rem;
+    margin-right: 0.01rem;
+  }
+
+  #snackbarForm {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .intro-txt {
+    padding-top: 11rem;
+  }
+  .about-inner,
+  .contact-inner {
+    max-width: 300px;
+  }
+}
