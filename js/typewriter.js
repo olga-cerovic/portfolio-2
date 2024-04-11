@@ -1,6 +1,6 @@
 const typewriterElement = document.getElementById("typewriter");
 
-const phrases = ["Olga", "cat lover", "coffeeholic"];
+const phrases = ["Olga", "a cat lover", "a coffeeholic"];
 
 let sleepTime = 100;
 
